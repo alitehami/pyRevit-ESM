@@ -42,6 +42,7 @@ The **pyRevit Extensions Settings Manager (ESM)** is a GUI utility webapp that c
 ### references:
 
 - [Managing pyRevit Extensions](https://www.notion.so/Managing-pyRevit-Extensions-42ca2b68ef9c48b685f027647ca14a60)
+- [bootstrap](https://getbootstrap.com/)
 - [JSON Editor](https://github.com/json-editor/json-editor). **npm library** JSON Editor takes a JSON Schema and uses it to generate an HTML form.
   
   `npm install @json-editor/json-editor`
