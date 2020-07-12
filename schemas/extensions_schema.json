@@ -1,0 +1,342 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": true,
+    "title": "My Schema Title",
+    "definitions": {
+        "comment": {
+            "title": "Comment:",
+            "type": "string",
+            "format": "textarea",
+            "default": ""
+        },
+        "yesno": {
+            "default": "yes",
+            "type": "string",
+            "enum": [
+                "yes",
+                "no"
+            ]
+        }
+    },
+    "type": "object",
+    "id": "https://niebert.github.io/json-editor",
+    "options": {
+        "disable_collapse": false,
+        "disable_edit_json": false,
+        "disable_properties": false,
+        "collapsed": false,
+        "hidden": false
+    },
+    "defaultProperties": [
+        "extensions"
+    ],
+    "properties": {
+        "extensions": {
+            "type": "array",
+            "id": "/properties/extensions",
+            "title": "Extensions",
+            "format": "tabs",
+            "options": {
+                "disable_collapse": false,
+                "disable_array_add": false,
+                "disable_array_delete": false,
+                "disable_array_reorder": false,
+                "disable_properties": false,
+                "collapsed": false,
+                "hidden": false
+            },
+            "items": {
+                "type": "object",
+                "id": "/properties/extensions/items",
+                "title": "Title Root Extensions ",
+                "options": {
+                    "disable_collapse": false,
+                    "disable_edit_json": false,
+                    "disable_properties": false,
+                    "collapsed": false,
+                    "hidden": false
+                },
+                "defaultProperties": [
+                    "type",
+                    "builtin",
+                    "default_enabled",
+                    "rocket_mode_compatible",
+                    "dependencies",
+                    "name",
+                    "description",
+                    "author",
+                    "author_profile",
+                    "url",
+                    "website",
+                    "image",
+                    "templates",
+                    "authusers"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "id": "/properties/extensions/items/properties/type",
+                        "title": "Type",
+                        "default": "extension",
+                        "format": "text",
+                        "description": "Description for 'type' Type: 'string' Path: '/properties/extensions/items/properties/type'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 10
+                    },
+                    "builtin": {
+                        "type": "boolean",
+                        "id": "/properties/extensions/items/properties/builtin",
+                        "title": "Builtin",
+                        "format": "checkbox",
+                        "default": false,
+                        "description": "A description for 'builtin'  Type: 'boolean'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 20
+                    },
+                    "default_enabled": {
+                        "type": "boolean",
+                        "id": "/properties/extensions/items/properties/default_enabled",
+                        "title": "Default Enabled",
+                        "format": "checkbox",
+                        "default": true,
+                        "description": "A description for 'default_enabled'  Type: 'boolean'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 30
+                    },
+                    "rocket_mode_compatible": {
+                        "type": "boolean",
+                        "id": "/properties/extensions/items/properties/rocket_mode_compatible",
+                        "title": "Rocket Mode Compatible",
+                        "format": "checkbox",
+                        "default": true,
+                        "description": "A description for 'rocket_mode_compatible'  Type: 'boolean'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 40
+                    },
+                    "dependencies": {
+                        "type": "array",
+                        "id": "/properties/extensions/items/properties/dependencies",
+                        "title": "Dependencies",
+                        "format": "tabs",
+                        "options": {
+                            "disable_collapse": false,
+                            "disable_array_add": false,
+                            "disable_array_delete": false,
+                            "disable_array_reorder": false,
+                            "disable_properties": false,
+                            "collapsed": false,
+                            "hidden": false
+                        },
+                        "items": {
+                            "headerTemplate": "Dependencies {{i1}}",
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "id": "/properties/extensions/items/properties/dependencies/oneof0",
+                                    "title": "oneof 0 /properties/extensions/items/properties/dependencies",
+                                    "default": "ExtensionName",
+                                    "format": "text",
+                                    "description": "Description for 'items' Type: 'string' Path: '/properties/extensions/items/properties/dependencies/items'",
+                                    "options": {
+                                        "hidden": false
+                                    }
+                                },
+                                {
+                                    "type": "string",
+                                    "id": "/properties/extensions/items/properties/dependencies/oneof1",
+                                    "title": "oneof 1 /properties/extensions/items/properties/dependencies",
+                                    "default": "ExtensionName",
+                                    "format": "text",
+                                    "description": "Description for 'items' Type: 'string' Path: '/properties/extensions/items/properties/dependencies/items'",
+                                    "options": {
+                                        "hidden": false
+                                    }
+                                }
+                            ]
+                        },
+                        "propertyOrder": 50
+                    },
+                    "name": {
+                        "type": "string",
+                        "id": "/properties/extensions/items/properties/name",
+                        "title": "Name",
+                        "default": "pyRevitTools",
+                        "format": "text",
+                        "description": "Description for 'name' Type: 'string' Path: '/properties/extensions/items/properties/name'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 60
+                    },
+                    "description": {
+                        "type": "string",
+                        "id": "/properties/extensions/items/properties/description",
+                        "title": "Description",
+                        "default": "IronPython Scripts for Autodesk Revit",
+                        "format": "text",
+                        "description": "Description for 'description' Type: 'string' Path: '/properties/extensions/items/properties/description'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 70
+                    },
+                    "author": {
+                        "type": "string",
+                        "id": "/properties/extensions/items/properties/author",
+                        "title": "Author",
+                        "default": "Ehsan Iran-Nejad",
+                        "format": "text",
+                        "description": "Description for 'author' Type: 'string' Path: '/properties/extensions/items/properties/author'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 80
+                    },
+                    "author_profile": {
+                        "type": "string",
+                        "id": "/properties/extensions/items/properties/author_profile",
+                        "title": "Author Profile",
+                        "default": "https://keybase.io/ein",
+                        "format": "text",
+                        "description": "Description for 'author_profile' Type: 'string' Path: '/properties/extensions/items/properties/author_profile'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 90
+                    },
+                    "url": {
+                        "type": "string",
+                        "id": "/properties/extensions/items/properties/url",
+                        "title": "Url",
+                        "default": "https://github.com/eirannejad/pyRevit.git",
+                        "format": "text",
+                        "description": "Description for 'url' Type: 'string' Path: '/properties/extensions/items/properties/url'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 100
+                    },
+                    "website": {
+                        "type": "string",
+                        "id": "/properties/extensions/items/properties/website",
+                        "title": "Website",
+                        "default": "https://alitehami.github.io/pyRevit-ESM/",
+                        "format": "text",
+                        "description": "Description for 'website' Type: 'string' Path: '/properties/extensions/items/properties/website'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 110
+                    },
+                    "image": {
+                        "type": "string",
+                        "id": "/properties/extensions/items/properties/image",
+                        "title": "Image",
+                        "default": "https://ein.sh/pyRevit/pyRevitLogo.svg",
+                        "format": "text",
+                        "description": "Description for 'image' Type: 'string' Path: '/properties/extensions/items/properties/image'",
+                        "options": {
+                            "hidden": false
+                        },
+                        "propertyOrder": 120
+                    },
+                    "templates": {
+                        "type": "object",
+                        "id": "/properties/extensions/items/properties/templates",
+                        "title": "Templates", "format": "tabs",
+                        "options": {
+                            "disable_collapse": false,
+                            "disable_edit_json": false,
+                            "disable_properties": false,
+                            "collapsed": false,
+                            "hidden": false
+                        },
+                        "defaultProperties": [
+                            "youtube",
+                            "author"
+                        ],
+                        "properties": {
+                            "youtube": {
+                                "type": "string",
+                                "id": "/properties/extensions/items/properties/templates/properties/youtube",
+                                "title": "Youtube",
+                                "default": "https://www.youtube.com/watch?v=",
+                                "format": "text",
+                                "description": "Description for 'youtube' Type: 'string' Path: '/properties/extensions/items/properties/templates/properties/youtube'",
+                                "options": {
+                                    "hidden": false
+                                },
+                                "propertyOrder": 10
+                            },
+                            "author": {
+                                "type": "string",
+                                "id": "/properties/extensions/items/properties/templates/properties/author",
+                                "title": "Author",
+                                "default": "Ehsan Iran-Nejad",
+                                "format": "text",
+                                "description": "Description for 'author' Type: 'string' Path: '/properties/extensions/items/properties/templates/properties/author'",
+                                "options": {
+                                    "hidden": false
+                                },
+                                "propertyOrder": 20
+                            }
+                        },
+                        "propertyOrder": 130
+                    },
+                    "authusers": {
+                        "type": "array",
+                        "id": "/properties/extensions/items/properties/authusers",
+                        "title": "Authusers",
+                        "format": "tabs",
+                        "options": {
+                            "disable_collapse": false,
+                            "disable_array_add": false,
+                            "disable_array_delete": false,
+                            "disable_array_reorder": false,
+                            "disable_properties": false,
+                            "collapsed": false,
+                            "hidden": false
+                        },
+                        "items": {
+                            "headerTemplate": "Authusers {{i1}}",
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "id": "/properties/extensions/items/properties/authusers/oneof0",
+                                    "title": "oneof 0 /properties/extensions/items/properties/authusers",
+                                    "default": "username",
+                                    "format": "text",
+                                    "description": "Description for 'items' Type: 'string' Path: '/properties/extensions/items/properties/authusers/items'",
+                                    "options": {
+                                        "hidden": false
+                                    }
+                                },
+                                {
+                                    "type": "string",
+                                    "id": "/properties/extensions/items/properties/authusers/oneof1",
+                                    "title": "oneof 1 /properties/extensions/items/properties/authusers",
+                                    "default": "username",
+                                    "format": "text",
+                                    "description": "Description for 'items' Type: 'string' Path: '/properties/extensions/items/properties/authusers/items'",
+                                    "options": {
+                                        "hidden": false
+                                    }
+                                }
+                            ]
+                        },
+                        "propertyOrder": 140
+                    }
+                }
+            },
+            "propertyOrder": 10
+        }
+    }
+}

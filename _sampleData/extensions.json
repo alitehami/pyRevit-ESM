@@ -1,45 +1,69 @@
 {
-    "extensions": [{
-            "builtin": "False",
-            "default_enabled": "True",
-            "type": "extension",
-            "rocket_mode_compatible": "False",
-            "name": "PyRevitPlus",
-            "description": "Extensions for PyRevit",
-            "author": "Gui Talarico",
-            "author_profile": "https://github.com/gtalarico",
-            "url": "https://github.com/gtalarico/pyrevitplus.git",
-            "website": "https://github.com/gtalarico/pyrevitplus",
-            "image": "",
-            "dependencies": []
-        },
-        {
-            "builtin": "False",
-            "default_enabled": "True",
-            "type": "extension",
-            "rocket_mode_compatible": "True",
-            "name": "PyRevitMEP",
-            "description": "MEP extension for PyRevit",
-            "author": "Cyril Waechter",
-            "author_profile": "https://github.com/CyrilWaechter",
-            "url": "https://github.com/CyrilWaechter/pyRevitMEP.git",
-            "website": "http://pythoncvc.net/?page_id=123",
-            "image": "",
-            "dependencies": []
-        },
-        {
-            "builtin": "False",
-            "default_enabled": "True",
-            "type": "extension",
-            "rocket_mode_compatible": "True",
-            "name": "pyApex",
-            "description": "Apex Project BIM Utils",
-            "author": "Aleksey Melnikov",
-            "author_profile": "https://github.com/melnikovalex",
-            "url": "https://github.com/apex-project/pyApex.git",
-            "website": "https://github.com/apex-project/pyApex",
-            "image": "",
-            "dependencies": []
-        }
-    ]
+  "extensions": [
+    {
+      "builtin": "False",
+      "default_enabled": "True",
+      "type": "extension",
+      "rocket_mode_compatible": "True",
+      "name": "myAwesomePyRevitExtension",
+      "description": "My Awesome Extension for PyRevit",
+      "author": "My Name",
+      "author_profile": "https://github.com/myAwesomePyRevitRepo",
+      "url": "https://github.com/gtalarico/myAwesomePyRevitRepo.git",
+      "website": "https://alitehami.github.io/pyRevit-ESM/",
+      "image": "",
+      "dependencies": [],
+      "authusers": ["username"]
+    },
+    {
+      // three types: UI Extensions, Library Extensions, Run Extensions
+      "type": "extension",
+      "builtin": false,
+      "default_enabled": true,
+      "rocket_mode_compatible": true,
+      "dependencies": ["ExtensionName", "ExtensionName"],
+      "name": "pyRevitTools",
+      "description": "IronPython Scripts for Autodesk Revit",
+      "author": "Ehsan Iran-Nejad",
+      "author_profile": "https://keybase.io/ein",
+      "url": "https://github.com/eirannejad/pyRevit.git",
+      "website": "https://alitehami.github.io/pyRevit-ESM/",
+      "image": "https://ein.sh/pyRevit/pyRevitLogo.svg",
+      "templates": {
+        "youtube": "https://www.youtube.com/watch?v=",
+        "author": "Ehsan Iran-Nejad"
+      },
+      "authusers": ["username","username"]
+    },
+    {
+      "builtin": "False",
+      "default_enabled": "True",
+      "type": "extension",
+      "rocket_mode_compatible": "True",
+      "name": "PyRevitMEP",
+      "description": "MEP extension for PyRevit",
+      "author": "Cyril Waechter",
+      "author_profile": "https://github.com/CyrilWaechter",
+      "url": "https://github.com/CyrilWaechter/pyRevitMEP.git",
+      "website": "http://pythoncvc.net/?page_id=123",
+      "image": "",
+      "dependencies": [],
+      "authusers": ["username1", "username2", "username3"]
+    },
+    {
+      "builtin": "False",
+      "default_enabled": "True",
+      "type": "extension",
+      "rocket_mode_compatible": "True",
+      "name": "pyApex",
+      "description": "Apex Project BIM Utils",
+      "author": "Aleksey Melnikov",
+      "author_profile": "https://github.com/melnikovalex",
+      "url": "https://github.com/apex-project/pyApex.git",
+      "website": "https://github.com/apex-project/pyApex",
+      "image": "",
+      "dependencies": [],
+      "authusers": ["username1", "username2", "username3"]
+    }
+  ]
 }

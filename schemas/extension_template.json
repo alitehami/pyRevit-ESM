@@ -1,0 +1,19 @@
+{
+  "type": "extension",
+  "builtin": false,
+  "default_enabled": true,
+  "rocket_mode_compatible": true,
+  "dependencies": ["ExtensionName", "ExtensionName"],
+  "name": "pyRevitTools",
+  "description": "IronPython Scripts for Autodesk Revit",
+  "author": "Ehsan Iran-Nejad",
+  "author_profile": "https://keybase.io/ein",
+  "url": "https://github.com/eirannejad/pyRevit.git",
+  "website": "https://alitehami.github.io/pyRevit-ESM/",
+  "image": "https://ein.sh/pyRevit/pyRevitLogo.svg",
+  "templates": {
+    "youtube": "https://www.youtube.com/watch?v=",
+    "author": "Ehsan Iran-Nejad"
+  },
+  "authusers": ["username", "username"]
+}
