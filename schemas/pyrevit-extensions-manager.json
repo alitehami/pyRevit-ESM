@@ -143,17 +143,6 @@
                   "options": {
                     "hidden": false
                   }
-                },
-                {
-                  "type": "string",
-                  "id": "/properties/extensions/items/properties/dependencies/oneof1",
-                  "title": "oneof 1 /properties/extensions/items/properties/dependencies",
-                  "default": "ExtensionName",
-                  "format": "text",
-                  "description": "Description for 'items' Type: 'string' Path: '/properties/extensions/items/properties/dependencies/items'",
-                  "options": {
-                    "hidden": false
-                  }
                 }
               ]
             },
@@ -273,11 +262,15 @@
                 "type": "string",
                 "id": "/properties/extensions/items/properties/templates/properties/author",
                 "title": "Author",
-                "default": "Ehsan Iran-Nejad",
+                "placeholder": "Ali Tehami",
                 "format": "text",
                 "description": "Description for 'author' Type: 'string' Path: '/properties/extensions/items/properties/templates/properties/author'",
                 "options": {
-                  "hidden": false
+                  "hidden": false,
+                  "inputAttributes": {
+                    "placeholder": "your name here...",
+                    "class": "myclass"
+                  }
                 },
                 "propertyOrder": 20
               }
@@ -305,17 +298,6 @@
                   "type": "string",
                   "id": "/properties/extensions/items/properties/authusers/oneof0",
                   "title": "oneof 0 /properties/extensions/items/properties/authusers",
-                  "default": "username",
-                  "format": "text",
-                  "description": "Description for 'items' Type: 'string' Path: '/properties/extensions/items/properties/authusers/items'",
-                  "options": {
-                    "hidden": false
-                  }
-                },
-                {
-                  "type": "string",
-                  "id": "/properties/extensions/items/properties/authusers/oneof1",
-                  "title": "oneof 1 /properties/extensions/items/properties/authusers",
                   "default": "username",
                   "format": "text",
                   "description": "Description for 'items' Type: 'string' Path: '/properties/extensions/items/properties/authusers/items'",

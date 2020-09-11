@@ -75,32 +75,6 @@
     </div>
 
     <script>
-      // This is the starting value for the editor
-      // We will use this to seed the initial editor
-      // and to provide a "Restore to Default" button.
-      //       var starting_value =
-      // {
-      //   name: "John Smith",
-      //   age: 35,
-      //   gender: "male",
-      //   location: {
-      //     city: "San Francisco",
-      //     state: "California",
-      //   },
-      //   pets: [
-      //     {
-      //       name: "Spot",
-      //       type: "dog",
-      //       fixed: true,
-      //     },
-      //     {
-      //       name: "Whiskers",
-      //       type: "cat",
-      //       fixed: false,
-      //     },
-      //   ],
-      // };
-
       let starting_value = {
         builtin: "True",
         default_enabled: "True",
@@ -120,14 +94,24 @@
         },
         dependencies: [],
       };
+     
+      // let skm = null;
+      
+      // (async ()=>{
+      //   let x = await fetch("./schemas/pyrevit-extensions-manager.json");
+      //   let y = await x.json();
+      //   skm = y
+      //   console.log(skm)
+      //   return y
+      // })();
 
       // Initialize the editor
       var editor = new JSONEditor(document.getElementById("editor_holder"), {
         // Enable fetching schemas via ajax
         ajax: true,
-
         // The schema for the editor
         schema: {
+          // $ref: skm,
           $ref: "/schemas/pyrevit-extensions-manager.json",
           format: "grid",
         },
